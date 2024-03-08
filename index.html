@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch a Sketch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Micro+5&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <div id="game-case">
+    <div id="title-game">
+      <div class="side-title">MAGIC</div>
+      <h1>EtchASketch</h1>
+      <div class="side-title">SCREEN</div>
+    </div>
+
+    <div id="content">
+      <div class="left-buttons">
+        <button class="side darker-btn" >DARKER</button>
+        <button class="side lighter-btn" >LIGHTER</button>
+      </div>
+      <div id="display"></div>
+
+      <div class="right-buttons">
+        <button class="side random-btn">RANDOM COLOR</button>
+        <button class="side eraser-btn">ERASER</button>
+      </div>
+    </div>
+
+    <div id="controls">
+      <input type="color" id="colorChange" class="circle-color">
+      <div class="grid-range">
+        <div id="size-value"> 14 x 14</div>
+        <input type="range" min="2" max="100" value="16" id="display-size">
+      </div>
+      <input type="reset" id="resetBtn" class="reset-btn"  >
+    </div>
+  </div>
+  <p id="copyright">Copyright © The Odin Project | Hans Munguia 2024</p>
+
+  <script src="app.js"></script>
+</body>
+</html>

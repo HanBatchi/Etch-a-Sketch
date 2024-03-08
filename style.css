@@ -1,0 +1,208 @@
+
+body{
+  display: flex;
+  background-image:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Micro 5";
+}
+#title-game{
+  font-size: 40px;
+  margin-top: -10px;
+  margin-bottom: -50px;
+  display: flex;
+  justify-content: center;
+  color: magenta;
+  align-items: center;
+}
+
+#game-case{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(222, 180, 180);
+  width: 750px;
+  height: 700px;
+  border-radius: 80px;
+  box-shadow: 5px 5px 9px 5px  rgba(0, 0, 0, 0.5);
+}
+#content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#display{
+  background-color: white;
+  display: flex;
+  width: 400px; 
+  height: 400px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid white;
+  border-radius: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#controls{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+#range-value{
+  margin: 0;
+  padding: 0;
+}
+#display-size{
+  appearance: none;
+  background-color: white;
+  border: none;
+  aspect-ratio: 15 /1; 
+  width: max(16vw,3em);
+  border-radius: 50px;
+  padding: 2px;
+  height: 10px;
+}
+#display-size::-webkit-slider-thumb {
+  appearance: none;
+  width: 35px; 
+  height: 35px; 
+  border: none;
+  background-color: black; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  transition: 0.5s;
+}
+#display-size::-webkit-slider-thumb:active{
+  width: 50px; 
+  height: 50px; 
+  background-color: white;
+  border: 6px solid black;
+}
+#size-value{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.657);
+  padding: 10px  30px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+#size-value:hover{
+  font-size: 35px;
+}
+#copyright{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.grid-range{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.right-buttons,
+.left-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.side{
+  text-orientation: upright;
+  line-height: 0.5em;
+  padding: 20px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: 0.5s;
+  border: none;
+  border-radius: 10px;
+}
+.side-title{
+  margin: 20px;
+}
+.left-buttons{
+  align-items: flex-start;
+}
+.right-buttons{
+  align-items: flex-end;
+}
+.darker-btn,
+.lighter-btn{
+  writing-mode: vertical-lr;
+}
+.darker-btn:hover,
+.lighter-btn:hover{
+  margin-left: -80px;
+  padding-left: 90px;
+  color: black;
+}
+.darker-btn:hover{
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+.darker-btn:active{
+  background-color: rgb(14, 14, 14);
+}
+.lighter-btn:hover{
+  background-color: rgb(181, 181, 181);
+  color: black;
+}
+.lighter-btn:active{
+  background-color: rgb(220, 219, 219);
+}
+.random-btn,
+.eraser-btn{
+  writing-mode: vertical-rl;
+}
+.random-btn:hover,
+.eraser-btn:hover{
+  margin-right: -80px;
+  padding-right: 90px;
+}
+.eraser-btn:active{
+  background-color: white;
+  color: black;
+}
+.circle-color,
+.reset-btn {
+  width: 110px; 
+  height: 110px; 
+  cursor: pointer;
+  border-radius: 50%; 
+  outline: none; 
+  margin: 0px;
+  transition: 0.5s;
+  box-shadow: 0px 2px 15px 5px  rgba(0, 0, 0, 0.5);
+}
+input[type="color" i]::-webkit-color-swatch-wrapper {
+  padding: 3px;
+}
+input[type="color" i]::-webkit-color-swatch {
+  border-radius: 50%;
+}
+.reset-btn{
+  font-size: 0px;
+}
+.circle-color:hover,
+.reset-btn:hover {
+  width: 120px;
+  height: 120px;
+  margin-left: -10px;
+}
+.reset-btn:hover{
+  font-size: 20px;
+  font-weight:1000;
+  color: black;
+}
+.reset-btn:active{
+  background-color: rgb(236, 52, 52);
+  font-size: 25px;
+  color: white;
+}
